@@ -1,0 +1,105 @@
+.login {
+  height: 100vh;
+  widows: 100vw;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/5dd45df7-33f1-4274-97ea-e9c6aca69dad/ed1cb962-411d-4e43-bad2-33f07ae8e341/IN-en-20211108-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-size: cover;
+
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 40px;
+        cursor: pointer;
+      }
+      .signInButton {
+        border: none;
+        padding: 8px 12px;
+        background-color: #e50914;
+        font-size: 18px;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    form {
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--main-color);
+      padding: 30px 30px;
+      border-radius: 5px;
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+      input {
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: rgb(92, 92, 92);
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        color: white;
+        z-index: 99;
+
+        &::placeholder {
+          color: lightgray;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .loginButton {
+        height: 60px;
+        border: none;
+        padding: 8px 12px;
+        background-color: #e50914;
+        font-size: 18px;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      p {
+        color: gray;
+        margin-bottom: 20px;
+        b {
+          color: white;
+          cursor: pointer;
+        }
+      }
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+  }
+}

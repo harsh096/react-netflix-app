@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color);
+
+  .back {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 99;
+    .backIcon {
+      margin-right: 10px;
+    }
+  }
+  .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
